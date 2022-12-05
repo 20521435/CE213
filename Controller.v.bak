@@ -1,0 +1,9 @@
+module Controller (CLK, reset, opcode, regDst, regWrite, ALUSrc, ALUcontrol, memWrite, memRead, memtoReg);
+  input CLK, reset;
+  input [5:0] opcode;
+  output reg Dst, regWrite, ALUSrc, memWrite, memRead, memtoReg;
+  output reg [1:0] ALUcontrol;
+  
+  
+  
+  

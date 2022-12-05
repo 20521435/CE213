@@ -1,0 +1,85 @@
+{D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/ALU.v} {1 {vlog -work work {D:\CE213_VERILOG-HDL IC DESIGN\LAB\CE213_LAB\DATAPATH_CONTROL_UNIT\ALU.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/register_file.v} {1 {vlog -work work {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/register_file.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module register_file
+
+Top level modules:
+	register_file
+
+} {} {}} {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/Controller.v} {1 {vlog -work work {D:\CE213_VERILOG-HDL IC DESIGN\LAB\CE213_LAB\DATAPATH_CONTROL_UNIT\Controller.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}} {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/sign_extern.v} {1 {vlog -work work {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/sign_extern.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sign_extern
+
+Top level modules:
+	sign_extern
+
+} {} {}} {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/datapath.v} {1 {vlog -work work {D:\CE213_VERILOG-HDL IC DESIGN\LAB\CE213_LAB\DATAPATH_CONTROL_UNIT\datapath.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
+} {} {}} {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/Memory.v} {1 {vlog -work work {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/Memory.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Memory
+
+Top level modules:
+	Memory
+
+} {} {}} {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/ALU_control.v} {1 {vlog -work work {D:\CE213_VERILOG-HDL IC DESIGN\LAB\CE213_LAB\DATAPATH_CONTROL_UNIT\ALU_control.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALU_control
+
+Top level modules:
+	ALU_control
+
+} {} {}} {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/tb_process.v} {1 {vlog -work work {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/tb_process.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tb_process
+
+Top level modules:
+	tb_process
+
+} {} {}} {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/tb_datapath.v} {1 {vlog -work work {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/tb_datapath.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tb_datapath
+
+Top level modules:
+	tb_datapath
+
+} {} {}} {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/register.v} {1 {vlog -work work {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/register.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module register
+
+Top level modules:
+	register
+
+} {} {}} {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/process.v} {1 {vlog -work work {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/process.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module process
+
+Top level modules:
+	process
+
+} {} {}} {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/MUX2to1.v} {1 {vlog -work work {D:/CE213_VERILOG-HDL IC DESIGN/LAB/CE213_LAB/DATAPATH_CONTROL_UNIT/MUX2to1.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MUX2to1
+
+Top level modules:
+	MUX2to1
+
+} {} {}}

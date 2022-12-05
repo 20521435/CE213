@@ -1,0 +1,17 @@
+module Memory (CLK, ADDR, Write_data, WE, RE, read_data);
+  input CLK, WE, RE;
+  input [31:0] ADDR;
+  input [31:0] Write_data;
+  output reg [31:0] read_data;
+  reg flag = 0;
+  reg [31:0] mem[4294967295:0];
+  always @(posedge CLK) begin 
+    if (WE && !RE) mem[ADDR] <= Write_data;
+    else begin 
+      if (!WE && RE) read_data <= mem[ADDR];
+      else begin 
+        flag <= 1;
+      end
+    end
+  end 
+endmodule

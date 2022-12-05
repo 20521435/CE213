@@ -1,0 +1,30 @@
+module datapath (CLK, INST, regDst, regWrite, ALUSrc, ALUcontrol, memWrite, memRead, memtoReg, regW, is_Zero, addr, opcode, funct);
+  input CLK, regDst, regWrite, ALUSrc, memWrite, memRead, memtoReg;
+  input [3:0] ALUcontrol;
+  input [31:0] INST;
+  output reg [31:0] regW;
+  output reg [31:0] addr;
+  output reg [5:0] opcode, funct;
+  output reg is_Zero;
+  wire [4:0] Dst_out;
+  wire [31:0] sign_out, RD1, RD2, Src_out, ALU_out, mem_out, writeReg_out, regW1;
+  wire isZero;
+  wire [4:0] rd, rs, rt;
+  assign rd = INST[15:11];
+  assign rs = INST[25:21];
+  assign rt = INST[20:16];
+  assign Dst_out = (regDst) ? rd : rt;
+  register_file u1 (.CLK(CLK), .WE(regWrite), .read_regA(rs), .read_regB(rt), .Write_addr(Dst_out), .Write_data(writeReg_out), .read_dataA(RD1), .read_dataB(RD2));
+  sign_extern u2 (.in(INST[15:0]), .out(sign_out));
+  MUX2to1 mux2 (.sel(ALUSrc), .dA(sign_out), .dB(RD2), .dout(Src_out));
+  ALU u3 (.ALUcontrol(ALUcontrol), .dataA(RD1), .dataB(Src_out), .isZero(isZero), .ALUresult(ALU_out));
+  Memory u4 (.CLK(CLK), .ADDR(ALU_out), .Write_data(RD2), .WE(memWrite), .RE(memRead), .read_data(mem_out));
+  MUX2to1 mux3 (.sel(memtoReg), .dA(mem_out), .dB(ALU_out), .dout(writeReg_out));
+  always @(posedge CLK) begin
+      regW = writeReg_out;
+      addr = ALU_out;
+      opcode = INST[31:26];
+      funct = INST[5:0];
+      is_Zero = isZero;
+  end
+endmodule

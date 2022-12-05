@@ -1,0 +1,11 @@
+module ALU_control (ALUop, funct, Sign_ALUcontrol);
+  input [1:0] ALUop;
+  input [5:0] funct;
+  output [3:0] Sign_ALUcontrol;
+  wire [7:0] vector;
+  asign vector = {ALUop, funct};
+  always @(*) begin 
+    case (vector)
+      
+    endcase
+  end
